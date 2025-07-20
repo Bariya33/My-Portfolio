@@ -1,0 +1,122 @@
+/* === Reset & Base Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #7aa15a;
+  color: #000000;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* === Section Styling === */
+section {
+  background-color: #ace600;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* === Headings === */
+h1, h2 {
+  color: #005f99;
+  margin-bottom: 12px;
+  border-left: 5px solid #007acc;
+  padding-left: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+/* === Lists === */
+ul {
+  list-style-type: square;
+  padding-left: 30px;
+}
+li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* === Table Styling === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 15px;
+}
+th, td {
+  border: 1px solid #100b0b;
+  padding: 12px;
+  text-align: center;
+}
+th {
+  background-color: #007acc;
+  color: white;
+}
+td {
+  background-color: #a3c6dd;
+}
+
+/* === Hero Section (Intro + Photo) === */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.hero-text h1 {
+  font-size: 2.2rem;
+  color: #005f99;
+  margin-bottom: 10px;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.hero-image {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #007acc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* === Responsive Fix === */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin: 15px 0;
+  }
+}
+
